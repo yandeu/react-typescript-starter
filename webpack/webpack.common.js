@@ -17,7 +17,17 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
-      { test: /\.tsx?$/, loader: 'ts-loader' }
+      { test: /\.tsx?$/, loader: 'ts-loader' },
+      {
+        // also declare in types/default.d.ts!
+        test: /\.(svg|png|jpe?g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      }
     ]
   },
   optimization: {

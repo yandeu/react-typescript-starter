@@ -7,6 +7,7 @@
     "strict": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "typeRoots": ["node_modules/@types", "types"]
   }
 }
